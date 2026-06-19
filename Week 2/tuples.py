@@ -1,18 +1,40 @@
-computers = ("HP", "Mac", "Apple")
-print(computers)
-fake, *others = computers
+x = ("samsung", "iphone", "tecno", "redmi")
+print(x[2])
+print(x[-2])
 
-# print(fake)
+y = list(x)
+y[1] = "itel"
+x = tuple(y)
+print(x)
 
-# others.append("Cool")
-# print(tuple(others))
+x = x + ("huawei",)
+print(x)
 
-# # Concactenate
-# computers = computers + ("Sony",)
-# print(computers)
+for i in x:
+    print(i + " ", end="")
+print()
 
-# Append
-compute = list(computers)
-compute.append("Microsoft")
-computers = tuple(compute)
-print(computers)
+y, *z = x
+x = list(z)
+print(x)
+
+cities = ["Mbarara", "Gulu", "Kabale", "Arua"]
+cities = tuple(cities)
+print(cities)
+
+a, b, *c = cities
+print(a, b, c)
+
+print(cities[1:])
+a = ("Arinda",)
+b = ("Emmanuel", "Nsiimenta")
+c = a + b
+print(c)
+
+colours = ("Blue", "Red", "Green")
+print(colours * 3)
+
+thistuple = (1, 3, 7, 8, 7, 5, 4, 6, 8, 5)
+num = 0
+
+print(thistuple.count(8))

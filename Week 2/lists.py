@@ -1,26 +1,42 @@
-# Used to store ordered collection of items
-# Mutable e.g can be changed,added, updated
-# Store data of multiple data types
+# 1st list - people
+people = ["Emily", "Joseph", "Tina", "George", "Victor"]
+print(people[1])
 
-# Creating a List
-# a = [1, 2, 3, 4, 5]
-# print(a)
-# print(type(a))
+people[0] = "Rachael"
+print(people)
 
-Food = ["Sugar", "beans", "Sauce", "Rice"]
-# print(Food)
-# print(type(Food))
-# print(Food[0])
-# print(Food[1])
-# print(Food[-3])
+people.append("Faith")
+print(people)
 
-a = [4, 5, 6]
-c = [7, 8]
-a.append(c)
+people.insert(2, "Bathel")
+print(people)
+
+people.pop(3)
+print(people)
+
+print(people[-1])
+
+# 2nd list
+items = [1, 2, 3, 4, 5, 6, 7]
+print(items[2:5])
+
+countries = ["Uganda", "Kenya", "Tanzania"]
+countries_copy = countries.copy()
+print(countries_copy)
+for i in countries:
+    print(i + " ", end="")
+print()
+
+# 3rd list
+animals = ["Zebra", "Turkey", "Crab"]
+animals.sort()
+print(animals)
+animals.sort(reverse=True)
+print(animals)
+for a in animals:
+    if "a" in a:
+        print(a)
+a = ["Arinda"]
+b = ["Emmanuel", "Nsiimenta"]
+a.extend(b)
 print(a)
-
-b = list((1, 2, 3, "Yam"))
-b.append(a)
-print(b)
-
-print(b[4][3][1])
